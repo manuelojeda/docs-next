@@ -1,32 +1,32 @@
-# Introduction
+# Introducción
 
-## What is Vue.js?
+## ¿Qué es Vue.js?
 
-Vue (pronounced /vjuː/, like **view**) is a **progressive framework** for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with [modern tooling](../guide/single-file-component.html) and [supporting libraries](https://github.com/vuejs/awesome-vue#components--libraries).
+Vue (pronunciado /viuː/) es un **framework progresivo** para construir interfaces de usuario. A diferencia de otros frameworks monolíticos, Vue esta diseñado desde cero para ser incrementalmente. La librería núcleo se enfoca unicamente en la capa de la vista, y es fácil de adaptar con tros librerías o proyectos ya existentes. Por el otro lado, Vue es perfectamente capaz de dar poder a sofisdticadas Aplicaciones de una Sola Página cuando se usa una combinación con [herramientas modernas](../guide/single-file-component.html) y [librerías que tienen soporte](https://github.com/vuejs/awesome-vue#components--libraries).
 
-If you’d like to learn more about Vue before diving in, we <a id="modal-player"  href="#">created a video</a> walking through the core principles and a sample project.
+Si quieres aprender más sobre Vue antes de entrar a fondo, hemos<a id="modal-player"  href="#">creado un video</a> repasando a traves de los principios centrales y en un proyecto simple.
 
-If you are an experienced frontend developer and want to know how Vue compares to other libraries/frameworks, check out the [Comparison with Other Frameworks](TODO:comparison.html).
+Si eres un desarrollador frontend con experiencia y quieres saber como Vue se compara con otras librerias/frameworks, mira la [Comparación con Otros Frameworks](TODO:comparison.html).
 
-## Getting Started
+## Iniciando
 
 <p>
   <ActionLink class="primary" url="installation.html">
-    Installation
+    Instalación
   </ActionLink>
 </p>
 
 ::: tip
-The official guide assumes intermediate level knowledge of HTML, CSS, and JavaScript. If you are totally new to frontend development, it might not be the best idea to jump right into a framework as your first step - grasp the basics then come back! Prior experience with other frameworks helps, but is not required.
+La guía oficial asume que cuenta con un conocimiento intermedio de HTML, CSS, y JavaScript. Si eres un desarrollador frontend totalmente nuevo, puede que no sea la mejor idea iniciar con un framework como primeros pasos - aprende las bases y entonces vuelves! La experiencia con otros frameworks ayuda, pero no es requerido.
 :::
 
-The easiest way to try out Vue.js is using the [Hello World example](https://codepen.io/team/Vue/pen/KKpRVpx). Feel free to open it in another tab and follow along as we go through some basic examples.
+La manera más fácil de probar Vue.js es usando el [ejemplo de Hola Mundo](https://codepen.io/team/Vue/pen/KKpRVpx). Sientete libre de abrirlo en otra pestaña y continua a través de otros ejemplos básicos.
 
-The [Installation](installation.md) page provides more options of installing Vue. Note: We **do not** recommend that beginners start with `vue-cli`, especially if you are not yet familiar with Node.js-based build tools.
+La página de [Instalación](installation.md) provee más opciones de como instalar Vue. Nota: **No** recomendamos que principiantes inicien con el `vue-cli`, especialmente si no estás familiarizado con herramientas basadas en Node.js.
 
-## Declarative Rendering
+## Renderizado Declarativo
 
-At the core of Vue.js is a system that enables us to declaratively render data to the DOM using straightforward template syntax:
+El núcleo de Vue.js es un sistema que nos habilita renderizar declarativamente datos al DOM utilizando una sintaxis de template:
 
 ```html
 <div id="hello-vue">
@@ -45,8 +45,7 @@ const HelloVueApp = {
 
 Vue.createApp(HelloVueApp).mount('#hello-vue')
 ```
-
-We have already created our very first Vue app! This looks pretty similar to rendering a string template, but Vue has done a lot of work under the hood. The data and the DOM are now linked, and everything is now **reactive**. How do we know? Change the `message` property in the code snippet below to a different value and the rendered example will update accordingly:
+Ya hemos creado nuestra primer app en Vue! Esto se parece en renderizar un string template, pero Vue ha hecho bastante trabajo bajo el capo. Los datos y el DOM ahora están vínculados, y ya todo es **reactivo**. ¿Cómo lo sabemos? Cambia la propiedad `message` en el snippet que se encuentra debajo con algún valor diferente y el ejemplo se renderizará con la debida actualización:
 
 <p class="codepen" data-height="300" data-theme-id="39028" data-default-tab="js,result" data-user="Vue" data-slug-hash="KKpRVpx" data-preview="true" data-editable="true" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Intro-1">
   <span>See the Pen <a href="https://codepen.io/team/Vue/pen/KKpRVpx">
@@ -55,7 +54,7 @@ We have already created our very first Vue app! This looks pretty similar to ren
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-In addition to text interpolation, we can also bind element attributes like this:
+Además de la interpolación de texto, también podemos vincular el atributo del elemento así:
 
 ```html
 <div id="bind-attribute">
@@ -85,7 +84,7 @@ Vue.createApp(AttributeBindingApp).mount('#bind-attribute')
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-Here we're encountering something new. The `v-bind` attribute you're seeing is called a **directive**. Directives are prefixed with `v-` to indicate that they are special attributes provided by Vue, and as you may have guessed, they apply special reactive behavior to the rendered DOM. Here we are basically saying "_keep this element's `title` attribute up-to-date with the `message` property on the Vue instance._"
+Nos hemos encontrado con algo nuevo. El atributo `v-bind` qu es estamos viendo es llamado como una **directiva**. Las Directivas son prefijos con `v-` para indicar que son atributos especiales provistos por Vue, y como habrás adivinado, ellos aplican un comportamiento de reactividad especial al DOM renderizado. Aquí basicamente estamos diciendo "_manten el atributo `título` de este elemento title` actualizado con propiedad `mensaje` de esta instancia de Vue._"
 
 ## Conditionals and Loops
 
