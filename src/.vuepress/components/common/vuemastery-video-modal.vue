@@ -14,20 +14,20 @@
       </div>
 
       <p class="modal-text">
-        Video by
+        Video por
         <a
           href="https://www.vuemastery.com"
           target="_blank"
           rel="sponsored noopener"
           title="Vue.js Courses on Vue Mastery"
         >Vue Mastery</a>.
-        Watch Vue Mastery’s free
+        Mira el material gratuito de Vue Mastery
         <a
           href="https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/"
           target="_blank"
           rel="sponsored noopener"
           title="Vue.js Courses on Vue Mastery"
-        >Intro to Vue course</a>.
+        >Curso de Introducción a Vue</a>.
       </p>
     </div>
   </div>
